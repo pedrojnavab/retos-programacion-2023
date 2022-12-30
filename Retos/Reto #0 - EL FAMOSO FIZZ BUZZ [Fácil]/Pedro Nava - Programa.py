@@ -15,20 +15,24 @@ for i in range(1, 101):
     
 print("\n========================")
 print("    Multiplos de 3")
-for i in range(3, 101, 3):
-    print("")
-    print(i, end=" Frizz\n")
+for i in range(1, 101):
+    if i%3!=0:
+        print(i, end=print(""))
+    if i%3==0:
+        print("\nFizz")
 
 print("\n========================")
 print("     Multiplos de 5") 
-for i in range(5, 101, 5):
-    print("")
-    print(i, end=" Buzz\n")
+for i in range(1, 101):
+    if i%5!=0:
+        print(i, end=print(""))
+    if i%5==0:
+        print("\nBuzz")
 
 print("\n========================")
-print("    Multiplos de 3 y 5\n")
+print("    Multiplos de 3 y 5")
 for i in range(1, 101):
-    if i % 3 == 0:
-        print(i, end=" Frizz\n\n")
-    if i % 5 == 0:
-        print(i, end=" Buzz\n\n")
+    if i%3!=0 or i%5!=0:
+        print(i, end=print(""))
+    if i%3==0 and i%5==0:
+         print("\nFizzBuzz")
